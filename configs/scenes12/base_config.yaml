@@ -1,0 +1,90 @@
+Results:
+  save_results: True
+  save_dir: "/mnt/nas_10/group/hongjia/splatloc-test/" # dirs for saving results
+  save_debug: False
+  save_match: False # True False, save 2D-3D matches for visualization
+  show_imgwise_error: False # True False
+
+Dataset:
+  sensor_type: 'depth'
+  generated_folder: '/mnt/nas_10/group/hongjia/splatloc-generated-files/12scenes'
+  pcd_downsample: 64
+  pcd_downsample_init: 32
+  adaptive_pointsize: True
+  point_size: 0.05
+  type: '12scenes'
+  Calibration:
+    fx: 572.0
+    fy: 572.0
+    cx: 320.0
+    cy: 240.0
+    k1: 0.0
+    k2: 0.0
+    p1: 0.0
+    p2: 0.0
+    k3: 0.0
+    width: 640
+    height: 480
+    depth_scale: 1000.0
+    distorted: False
+
+decoder:
+  enc: 'HashGrid' # HashGrid identity freq
+  num_layers: 4 # 2 4
+  hidden_dim: 128
+  final_dim: 256
+  
+
+Training:
+  init_itr_num: 1050
+  init_gaussian_update: 100
+  init_gaussian_reset: 500
+  init_gaussian_th: 0.005
+  init_gaussian_extent: 30
+  mapping_itr_num: 10 # 10 20
+  gaussian_update_every: 150
+  gaussian_update_offset: 50
+  gaussian_th: 0.7
+  gaussian_extent: 1.0
+  gaussian_reset: 2001
+  size_threshold: 20
+  kf_interval: 1 # we already sample frames
+  window_size: 5
+  edge_threshold: 4
+  rgb_boundary_threshold: 0.01
+  spherical_harmonics: False
+  primitive_reg: True # False True
+
+
+opt_params:
+  iterations: 30000
+  position_lr_init: 0.00016
+  position_lr_final: 0.0000016
+  position_lr_delay_mult: 0.01
+  position_lr_max_steps: 30000
+  feature_lr: 0.0025
+  opacity_lr: 0.05
+  marker_lr: 0.05
+  kp_score_lr: 0.05
+  descriptor_lr: 0.01
+  scaling_lr: 0.001
+  rotation_lr: 0.001
+  percent_dense: 0.01
+  lambda_dssim: 0.2
+  densification_interval: 100
+  opacity_reset_interval: 3000
+  densify_from_iter: 500
+  densify_until_iter: 15000
+  densify_grad_threshold: 0.0002
+
+model_params:
+  sh_degree: 0
+  source_path: ""
+  model_path: ""
+  resolution: -1
+  white_background: False
+  data_device: "cuda"
+  
+pipeline_params:
+  convert_SHs_python: True
+  compute_cov3D_python: False

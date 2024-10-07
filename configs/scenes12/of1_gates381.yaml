@@ -1,0 +1,7 @@
+inherit_from: "configs/scenes12/base_config.yaml"
+Dataset:
+  dataset_path: "/mnt/nas_54/datasets/nerf-loc/12scenes/office1/gates381"
+
+scene:
+  bound: [[2.9, 7.0],[-0.3, 5.4],[-0.6, 1.7]]
+  voxel_sdf: 0.06

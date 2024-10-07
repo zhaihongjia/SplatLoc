@@ -1,0 +1,7 @@
+inherit_from: "configs/replica_nerf/base_config.yaml"
+Dataset:
+  dataset_path: "/mnt/nas_54/datasets/nerf-loc/replica/office_2"
+
+scene:
+  bound: [[-3.6,3.2],[-3.0,5.5],[-1.4,1.7]]
+  voxel_sdf: 0.06

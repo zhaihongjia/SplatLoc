@@ -1,0 +1,7 @@
+inherit_from: "configs/scenes12/base_config.yaml"
+Dataset:
+  dataset_path: "/mnt/nas_54/datasets/nerf-loc/12scenes/apt2/living"
+
+scene:
+  bound: [[-2.5, 2.5],[-2.7, 2.8],[-0.3, 1.7]]
+  voxel_sdf: 0.06

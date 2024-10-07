@@ -1,0 +1,7 @@
+inherit_from: "configs/scenes12/base_config.yaml"
+Dataset:
+  dataset_path: "/mnt/nas_54/datasets/nerf-loc/12scenes/apt2/luke"
+
+scene:
+  bound: [[-2.4, 2.7],[-1.8, 5.9],[-0.2, 2.6]]
+  voxel_sdf: 0.06

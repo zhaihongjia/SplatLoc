@@ -1,0 +1,7 @@
+inherit_from: "configs/scenes12/base_config.yaml"
+Dataset:
+  dataset_path: "/mnt/nas_54/datasets/nerf-loc/12scenes/apt2/kitchen"
+
+scene:
+  bound: [[-1.6, 2.2],[-1.6, 1.5],[-0.1, 2.1]]
+  voxel_sdf: 0.06
