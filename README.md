@@ -29,10 +29,13 @@
   </a>
 </p>
 <p align="center">
-We present <a href="https://arxiv.org/abs/2312.06741">SplatLoc</a>, an efficient and novel visual localization approach designed for Augmented Reality (AR). As illustrated in the figure, our system utilizes monocular RGB-D frames to reconstruct the scene using 3D Gaussian primitives. Additionally, with our learned unbiased 3D descriptor fields, we achieve 6-DoF camera pose estimation through precise 2D-3D feature matching. We demonstrate the potential AR applications of our system, such as virtual content insertion and physical collision simulation. We highlight virtual objects with red boxes.
+We present <a href="https://arxiv.org/abs/2409.14067">SplatLoc</a>, an efficient and novel visual localization approach designed for Augmented Reality (AR). As illustrated in the figure, our system utilizes monocular RGB-D frames to reconstruct the scene using 3D Gaussian primitives. Additionally, with our learned unbiased 3D descriptor fields, we achieve 6-DoF camera pose estimation through precise 2D-3D feature matching. We demonstrate the potential AR applications of our system, such as virtual content insertion and physical collision simulation. We highlight virtual objects with red boxes.
 </p>
 <br>
 
+## Updates
+- [20204.11.25]: We add visualization codes of the localization process.
+ 
 ## TODO Lists
 - [x] provide retrieval file, feature ply path, score map path
 - [x] codes for training and evaluation
