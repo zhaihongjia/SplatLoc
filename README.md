@@ -35,13 +35,8 @@ We present <a href="https://arxiv.org/abs/2409.14067">SplatLoc</a>, an efficient
 
 ## Updates
 - [20204.11.25]: update visualization codes of the localization process.
-- [20204.12.02]: update preprocess codes to generate ()
+- [20204.12.02]: update preprocess codes to generate retrieval results, 2D SuperPoint feature maps and 3D fused feature cloud.
  
-## TODO Lists
-- [x] provide retrieval file, feature ply path, score map path
-- [x] codes for training and evaluation
-- [ ] codes for retrieval and 2D feature map
-
 ## Env setup
 
 Clone the code:
@@ -57,7 +52,7 @@ cd SplatLoc/submodules
 
 git clone --recursive https://github.com/cvg/Hierarchical-Localization/
 git clone https://gitlab.inria.fr/bkerbl/simple-knn.git
-git clone https://github.com/dendenxu/diff-gaussian-rasterization.git
+git clone https://github.com/zhaihongjia/diff-gaussian-rasterization.git
 ```
 
 Setup the environment:
@@ -68,7 +63,6 @@ conda activate splatloc
 
 pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 ```
-**set `NUM_CHANNELS` in file `submodules/diff-gaussian-rasterization/cuda_rasterizer/config.h` as 4**
 
 Then, run following scripts:
 ```bash
@@ -128,7 +122,7 @@ The saved ply and evaluation results are stored in your `save_dir` in the `base_
 This work incorporates many open-source codes. We extend our gratitude to the authors of the software.
 - [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 - [MonoGS](https://github.com/muskie82/MonoGS)
-- [Differential Gaussian Rasterization](https://github.com/dendenxu/diff-gaussian-rasterization) provided by [Zhen Xu](https://zhenx.me/)
+- [Differential Gaussian Rasterization](https://github.com/zhaihongjia/diff-gaussian-rasterization)
 - [Hierarchical-Localization](https://github.com/cvg/Hierarchical-Localization)
 - [SceneLandmarkLocalization](https://github.com/microsoft/SceneLandmarkLocalization)
 
