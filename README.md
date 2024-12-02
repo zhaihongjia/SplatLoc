@@ -34,7 +34,8 @@ We present <a href="https://arxiv.org/abs/2409.14067">SplatLoc</a>, an efficient
 <br>
 
 ## Updates
-- [20204.11.25]: We add visualization codes of the localization process.
+- [20204.11.25]: update visualization codes of the localization process.
+- [20204.12.02]: update preprocess codes to generate ()
  
 ## TODO Lists
 - [x] provide retrieval file, feature ply path, score map path
