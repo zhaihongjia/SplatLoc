@@ -130,10 +130,13 @@ This work incorporates many open-source codes. We extend our gratitude to the au
 If you found this code/work to be useful in your own research, please considering citing the following:
 
 ```bibtex
-@article{splatloc,
-      author={Zhai, Hongjia and Zhang, Xiyu and Zhao Boming and Li, Hai and He, Yijia and Cui, Zhaopeng and Bao, Hujun and Zhang, Guofeng},
-      journal={arXiv preprint arXiv:2409.14067}, 
-      title={{SplatLoc}: 3D Gaussian Splatting-based Visual Localization for Augmented Reality}, 
-      year={2024},
+@article{zhai2025splatloc,
+  title={{SplatLoc}: 3D Gaussian Splatting-based Visual Localization for Augmented Reality}, 
+  author={Zhai, Hongjia and Zhang, Xiyu and Zhao, Boming and Li, Hai and He, Yijia and Cui, Zhaopeng and Bao, Hujun and Zhang, Guofeng},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2025},
+  volume={31},
+  number={5},
+  pages={3591-3601},
 }
 ```
